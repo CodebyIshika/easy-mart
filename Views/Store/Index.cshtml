@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Index.css" /> ‌
+
+    <title>Index</title>
+</head>
+<body>
+    <center>
+        <h1>Easy Mart</h1>
+        <div>
+            @Html.ActionLink("Add New Product", "Products", "Store")
+            @Html.ActionLink("Check Inventory", "DisplayInventory", "Store")
+        </div>
+    </center>
+</body>
+</html>

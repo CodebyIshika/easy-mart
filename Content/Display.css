@@ -1,0 +1,27 @@
+﻿table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+
+/* Style table header */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style delete button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
