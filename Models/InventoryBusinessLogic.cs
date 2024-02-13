@@ -9,12 +9,14 @@ namespace MvcLab.Models
     {
         public static List<Inventory> InventoryList = new List<Inventory>();
 
+        // Add an inventory item to the list
         public bool AddInventory(Inventory inventory)
         {
             InventoryList.Add(inventory);
             return true;
         }
 
+        // Retrieve the list of inventory items
         public List<Inventory> GetInventoryList()
         {
             return InventoryList.ToList();

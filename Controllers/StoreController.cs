@@ -21,11 +21,13 @@ namespace MvcLab.Controllers
             return View(products);
         }
 
+        // Display the form for adding a new product
         public ActionResult Products()
         {
             return View("AddProduct");
         }
 
+        // Add a new product based on user input
         public ActionResult AddProduct(string Name, string Description, decimal? ProductPrice, int? StockQuantity)
         {
             Product productObj = new Product
@@ -52,6 +54,7 @@ namespace MvcLab.Controllers
             return RedirectToAction("Index");
         }
 
+        // Display the combined view of products and inventory
         public ActionResult DisplayInventory()
         {
             // Retrieve both product and inventory data

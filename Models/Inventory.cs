@@ -10,10 +10,12 @@ namespace MvcLab.Models
         public int InventoryID { get; set; }
         public int? StockQuantity { get; set; }
 
+        // Foreign key to associate with the Product model
         public int ProductID { get; set; }
 
         public Product AccessProduct {  get; set; }
 
+        // Constructor for Inventory class
         public Inventory(Product accessProduct)
         {
             AccessProduct = accessProduct;
